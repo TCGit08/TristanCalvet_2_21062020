@@ -5,23 +5,28 @@
         <title>Reservia</title>
 	    <meta charset="utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="styles.css">
+	   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/82398b39e7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
     </head>
+    
     
     <body>
 
+
         <header>
 
-            <img src="images/logo/Reservia@3x.png<" alt="Logo Reservia">
+            <img id="logo_reservia" src="images/logo/Reservia@3x.png" alt="Logo Reservia">
             <nav>
                 <ul>
                     <li><a href="#hébergements">Hébergements</a></li> <!--Lien vers la section hébergements-->
                     <li><a href="#activités">Activités</a></li>       <!--Lien vers la section activités-->
                 </ul>
+                <div id="inscription">
+                    <p><a href="#">S'inscrire</a></p>    
+                </div>
             </nav>
-            <div id="inscription">
-                <p><a href="#">S'inscrire</a></p>    
-            </div>
+            
         
         </header>
 
@@ -42,7 +47,7 @@
                 <div id="saisie_destination">
                     <!--traitement.php serait l'éventuelle  fichier récupérant les valeurs pour le traitement de la demande par le serveur.-->
                     <form action="traitement.php" method="POST">    
-                        <img id="" src="" alt="">
+                        <i class="fas fa-map-marker-alt" style="color:black"></i>
                         <input type="" name="localisation" placeholder="Ville, Pays">
                         <button  type="submit">Rechercher</button>
                     </form>
@@ -54,30 +59,31 @@
                     <p>Filtres</p>
                     
                     <div id="filtre_économique">
-                        <i></i>
+                        <i class="fas fa-money-bill-wave" style="color:#0065FC"></i>
                         <button></button>
-                    </div id="filtre_familial">
+                    </div>
                     
+                    <div id="filtre_familial">
+                        <i class="fas fa-child" style="color:#0065FC"></i>
+                        <button></button>
+                    </div>
+
                     <div id="filtre_romantique">
-                        <i></i>
+                        <i class="fas fa-heart" style="color:#0065FC"></i>
                         <button></button>
                     </div>
                     
                     <div id="filtre_animaux">
-                        <i></i>
+                        <i class="fas fa-dog" style="color:#0065FC"></i>
                         <button></button>
                     </div>
-                    
-                    <div id="">
-                        <i></i>
-                        <button></button>
-                    </div>
-                
+                                                     
                 </div>
+
 
                 <!--Infos sur le nbre de choix possibles pour la destination choisie-->
                 <div id="disponibilité_sur_destination">
-                    <i></i>
+                    <i class="fas fa-info" style="color:#0065FC"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville.</p>
                 </div>
 
@@ -284,4 +290,5 @@
         </footer>
 
     </body>
+
 </html>
