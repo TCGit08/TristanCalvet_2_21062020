@@ -1,13 +1,15 @@
 body{
 	font-family: 'Raleway', sans-serif;
-	margin: 40px 40px 40px 40px;
+	
 }
 
 #bandeau {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: nowrap;
     color: #0065FC;
+    margin: 40px 40px 40px 40px;
 }
 
 #bandeau svg{
@@ -17,6 +19,7 @@ body{
 
 nav-bar {
 	display: flex;
+	flex-wrap: wrap-reverse ;
 	
 }
 
@@ -38,4 +41,45 @@ nav-bar div a{
 	color: #0065FC;
 	font-weight: bold;
 	margin-left: 30px;
+}
+
+
+/*Main*/
+
+main{
+	margin: 40px 40px 40px 40px;
+}
+
+
+/* Footer */
+
+footer{
+	background: #F2F2F2;
+	background-size: cover ;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+footer div{
+	display: flex;
+	flex-direction: column;
+	width: calc(80% / 3);
+	margin-right: 30px;
+
+}
+
+footer p{
+	font-weight: bold;
+	margin: 30px 40px 0px 40px;
+}
+
+footer ul{
+	list-style: none;
+
+}
+
+footer li{
+	list-style: none;
+	padding: 5px;
 }
