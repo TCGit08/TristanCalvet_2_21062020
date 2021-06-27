@@ -51,9 +51,140 @@ main{
 }
 
 
+
+/* Main */
+
+
+	/* Formulaire */
+
+
+form i{
+	border: 1px solid #F2F2F2;
+	background: #F2F2F2;
+	background-size: cover ;
+	margin: 10px 0px 10px 0px;
+	padding: 12px 12px 12px 12px;
+	border-radius: 12px 0px 0px 12px;
+}
+
+form input{
+	border: 1px solid #F2F2F2 ;
+	color: black;
+	font-weight: bold;
+	padding: 12px 14px 10px 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+form button{
+	border: 1px solid #0065FC;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background: #0065FC;
+	background-size: cover;
+	padding: 10px 10px 10px 10px;
+	border-radius: 0px 12px 12px 0px;
+}
+
+
+
+	/* Filtres */
+
+#filtres{
+	display: flex;
+	align-items: center;
+}
+
+#filtres_items{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+
+#filtres p{
+	font-weight: bold;
+	margin-right: 40px;
+}
+
+.filtre_sélecteur{
+	margin-right: 40px;
+	border: 2px solid #DEEBFF;
+	border-radius: 50px 50px 50px 50px;
+	font-weight: bold;
+	text-align: center;
+	flex-wrap: nowrap;
+}
+
+#filtres_items i{
+	background: #DEEBFF;
+	background-size: cover;
+	padding: 15px 15px 15px 15px;
+	border-radius: 50px 50px 50px 50px;
+}	
+
+.filtre_sélecteur button{
+	font-weight: bold;
+	text-align: center;
+	background: white ;
+	border: none;
+	padding: 10px 20px 10px 5px;
+}
+
+
+#disponibilité_sur_destination{
+	display: flex;
+	align-items: center;
+}
+
+#disponibilité_sur_destination i{
+	border: 2px solid #F2F2F2;
+	font-size: 11px;
+	padding: 4px 8px 4px 8px;
+	border-radius: 20px 20px 20px 20px;
+	margin-right: 10px;
+}
+
+
+
+	/* Section choix*/
+
+#choix{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+#hébergements_marseille{
+	display: flex;
+	flex-direction: column;
+}
+
+#hébergements_dispo_ligne_1{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#hébergements_dispo_ligne_2{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+
+	/* Activités */
+
+#blocs_activités{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+
+}
+
 /* Footer */
 
 footer{
+	margin: 0;
 	background: #F2F2F2;
 	background-size: cover ;
 	display: flex;
@@ -83,3 +214,4 @@ footer li{
 	list-style: none;
 	padding: 5px;
 }
+
