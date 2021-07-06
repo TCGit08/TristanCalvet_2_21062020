@@ -13,8 +13,7 @@ body{																							/* Définition police */
 	body
 	{
 		width: 100%;
-		margin-left: 0px;
-		margin-right: 0;
+		margin: 0px;
 	}
 }
 
@@ -77,14 +76,22 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 		flex-wrap: nowrap;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 20px;
+		margin: 20px 20px 20px 20px
+	}
+
+	#bandeau svg{
+		width: calc(100% / 2);
+	}
+
+	#bandeau div{
+		width: calc(100% / 2);
+		align-items: flex-start;
 	}
 
 	nav-bar 
 	{
 		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: row;
+		flex-wrap: wrap;
 		align-self: flex-end;
 		width: 100%;
 		margin-top: 20px;
@@ -108,9 +115,19 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 
 @media (min-width: 370px) and (max-width: 780px)
 {
-	#hébergements div{
+	
+	#titre_principal{
 		margin: 0px 20px 0px 20px;
 	}
+
+	#saisie_destination{
+		margin: 0px 20px 0px 20px;
+	}
+
+	#disponibilité_sur_destination{
+		margin: 0px 20px 0px 20px;
+	}
+
 }	
 
 
@@ -253,9 +270,21 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 
 @media (min-width: 370px) and (max-width: 780px)
 {
+	
+	#filtres
+	{
+		margin: 0px 20px 0px 20px;
+	}
+
 	#filtres_items
 	{
 		justify-content: flex-start;
+		margin-bottom: 10px;
+	}
+
+	#filtre_sélecteur
+	{
+		margin-bottom: 10px;
 	}
 
 	#disponibilité_sur_destination
@@ -348,10 +377,6 @@ color: black;
 	display: flex;
 }
 
-#hébergements_marseille p{
-	font-weight: bold;
-}
-
 
 @media (min-width: 370px) and (max-width: 780px)
 {
@@ -377,7 +402,7 @@ color: black;
 	#hébergements_marseille article {
 		width: 100%;
 		height: 230px;
-		font-size: 1.1em;
+		font-size: 1.0em;
 	}
 
 	#hébergements_dispo_ligne_1{	
