@@ -12,11 +12,17 @@ body{																							/* Définition police */
 {
 	body
 	{
-		width: 100%;
-		margin: 20px; 
+		width: 86%;
 	}
 }
 
+@media(min-width: 781px) and (max-width: 1200px)
+{
+	body
+	{
+		width: 100%;
+	}
+}
 
 
 
@@ -64,6 +70,7 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 	#bandeau
 	{
 		width: 100%;
+		height: 100px;
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;
@@ -74,10 +81,16 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 	nav-bar 
 	{
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
+		flex-direction: row;
 		align-self: flex-end;
 		width: 100%;
 		margin-top: 20px;
+	}
+
+	#bandeau div
+	{
+		justify-content: flex-start;
 	}
 
 	nav a:hover{																			/* Aspect des liens Hébergements et Activités au survol */										
@@ -85,11 +98,8 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 	border-top: none;
 	color: #0065FC;
 	}
+
 }
-
-
-
-
 
 
 
@@ -137,8 +147,9 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 
 	form
 	{
-		max-width: 100%;
+		width: 100%;
 	}
+
 
 }
 
@@ -211,8 +222,13 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 	margin-right: 10px;
 }
 
-
-
+@media (min-width: 370px) and (max-width: 780px)
+{
+	#filtres_items
+	{
+		justify-content: flex-start;
+	}
+}
 
 
 
@@ -298,7 +314,44 @@ color: black;
 }
 
 
+@media (min-width: 370px) and (max-width: 780px)
+{
+	#hébergements_marseille{
+	width: 100%;
+	}
 
+	#hébergements_marseille article{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+
+@media (min-width: 370px) and (max-width: 780px)
+{
+	#hébergements_marseille{
+		width: 100%;
+		background: white;
+	}
+
+	#hébergements_marseille article {
+		width: 100%;
+		height: 230px;
+		font-size: 1.1em;
+	}
+
+	#hébergements_dispo_ligne_1{	
+		flex-direction: column;
+	}
+
+	#hébergements_dispo_ligne_2{
+		flex-direction: column;
+	}
+
+	#hébergements_marseille article img{
+		max-width: 100%;
+	}	
+}
 
 
 
@@ -356,14 +409,12 @@ color: black;
 #hébergements_populaires article .infos_hébergement{							/* Blocs infos des cartes d'hébergements pour Les plus populaires */
 	flex: 1 1 60%;
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
+	align-items: flex-start;
 	padding-left: 15px;
 	font-size: 75%;
 }
 
-#hébergements_marseille article p{									/* Commentaires dans les cartes d'hébergements */
-	
-}
 
 #hébergements_marseille article note{								/* Notation dans les cartes d'hébergements */
 	display: flex;
@@ -372,11 +423,30 @@ color: black;
 
 @media (min-width: 370px) and (max-width: 780px)
 {
-
+	#les_plus_populaires {
+		width: 100%;
+	}
+		
 	#choix_populaires{
-	max-width: 100%;	
+		width: 100%;	
+	}
 
+	#hébergements_populaires {
+		width: 100%;
+	}
+
+	#hébergements_populaires article {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 1.15em;
+		height: 150px;
+	}
 }
+
+
+
+
 
 /* Activités */
 
@@ -419,7 +489,7 @@ color: black;
 	box-shadow: 5px 5px 10px grey;
 	width: 250px;
 	height: 450px;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 .unique img{																				/* Positionnement et aspect des photos dans les colonnes à élément unique */
@@ -436,7 +506,7 @@ color: black;
 	box-shadow: 5px 5px 10px grey;
 	width: 250px;
 	height: 200px;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 .double img{																				/* Positionnement et aspect des photos dans les colonnes à 2 éléments */
@@ -451,18 +521,40 @@ color: black;
 {
 	#activités{	
 		width: 100%;
+		margin-top: 20px;
+	}
+
+	#blocs_activités{
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
 
-	.unique{
+	#activités h2{	
 		width: 100%;
 		height: 50px;
 	}
 
+	#blocs_activités img{
+		height: 80%;
+	}
+
+	#blocs_activités h3{
+		font-size: 1.0em;
+	}
+
+	.unique{
+		width: 100%;
+		height: 200px;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+
 	.double{
-		max-width: 100%;
-		height: 50px;
+		width: 100%;
+		height: 200px;
+		flex-direction: column;
+		margin-bottom: 20px;
 	}
 
 }
@@ -472,7 +564,7 @@ color: black;
 /* Footer */
 
 footer{																							/* Positionnement et comportement du footer */
-	margin: 0;
+	width: 100%;
 	background: #F2F2F2;
 	background-size: cover ;
 	display: flex;
@@ -485,6 +577,7 @@ footer div{																					/* Disposition des blocs d'éléments du footer 
 	align-items: flex-start;
 	width: calc(80% / 3);
 	margin-right: 30px;
+	justify-content: flex-start;
 }
 
 footer h4{																					/* Aspect et positionnement des titres des blocs d'éléments du footer */
@@ -495,6 +588,7 @@ footer h4{																					/* Aspect et positionnement des titres des blocs 
 footer ul{																					/* Aspect des ul du footer */
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 footer li{																					/* Comportement des li du footer */
@@ -502,3 +596,18 @@ footer li{																					/* Comportement des li du footer */
 	padding: 5px;
 } 
 
+@media (min-width: 370px) and (max-width: 780px)
+{
+
+	footer
+	{
+		flex-direction: column;
+	}
+
+	
+	footer div
+	{
+		width: 100%;
+	}
+
+}
