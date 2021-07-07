@@ -1,7 +1,7 @@
 /* Body */
 
-body{																							/* Définition police */
-	
+body
+{																							/* Définition police */
 	width: 1200px;
 	font-family: 'Raleway', sans-serif;
 	margin: 40px;
@@ -30,7 +30,8 @@ body{																							/* Définition police */
 /* Bandeau ou header */
 
 
-#bandeau {																				/* Aspect et positionnement de la partie bandeau */
+#bandeau 
+{																				/* Aspect et positionnement de la partie bandeau */
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -38,27 +39,32 @@ body{																							/* Définition police */
     max-width: 1120px;
 }
 
-#bandeau svg{																			/* Logo de l'entreprise */
+#bandeau svg
+{																			/* Logo de l'entreprise */
 	max-width: 124px;
 	height: 50px;
 	align-self: flex-start;
 }
 
-a:link {																					/* Aspect et positionnement des liens de la nav-bar (nav et div) */		 
+a:link 
+{																					/* Aspect et positionnement des liens de la nav-bar (nav et div) */		 
  text-decoration:none; 
 } 
 
-nav a{																														
+nav a
+{																														
 	color: black;
 	padding: 38px 30px 0px 30px;
 }
 											
-nav a:hover{																			/* Aspect des liens Hébergements et Activités au survol */										
+nav a:hover
+{																			/* Aspect des liens Hébergements et Activités au survol */										
 	border-top: 2px solid #0065FC ;
 	color: #0065FC;
 }
 
-#bandeau div a{																		/* Aspect du liens S'inscrire */									
+#bandeau div a
+{																		/* Aspect du liens S'inscrire */									
 	color: #0065FC;
 	font-weight: bold;
 	margin-left: 30px;
@@ -71,7 +77,7 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 	#bandeau
 	{
 		width: 100%;
-		height: 100px;
+		height: 150px;
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;
@@ -79,11 +85,13 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 		margin: 20px 20px 20px 20px
 	}
 
-	#bandeau svg{
+	#bandeau svg
+	{
 		width: calc(100% / 2);
 	}
 
-	#bandeau div{
+	#bandeau div
+	{
 		width: calc(100% / 2);
 		align-items: flex-start;
 	}
@@ -91,6 +99,7 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 	nav-bar 
 	{
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		align-self: flex-end;
 		width: 100%;
@@ -102,7 +111,8 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 		justify-content: flex-start;
 	}
 
-	nav a:hover{																			/* Aspect des liens Hébergements et Activités au survol */										
+	nav a:hover
+	{																			/* Aspect des liens Hébergements et Activités au survol */										
 	border-bottom: 2px solid #0065FC ;
 	border-top: none;
 	color: #0065FC;
@@ -116,15 +126,18 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 @media (min-width: 370px) and (max-width: 780px)
 {
 	
-	#titre_principal{
+	#titre_principal
+	{
 		margin: 0px 20px 0px 20px;
 	}
 
-	#saisie_destination{
+	#saisie_destination
+	{
 		margin: 0px 20px 0px 20px;
 	}
 
-	#disponibilité_sur_destination{
+	#disponibilité_sur_destination
+	{
 		margin: 0px 20px 0px 20px;
 	}
 
@@ -133,13 +146,15 @@ nav a:hover{																			/* Aspect des liens Hébergements et Activités a
 
 /* Formulaire */
 
-form{
+form
+{
 	display: flex;																		/* Positionnement du formulaire */
 	align-items: center;
 	margin-bottom: 20px;
 }
 
-form i{																							/* Aspect et positionnement de l'icône du formulaire */
+form i
+{																							/* Aspect et positionnement de l'icône du formulaire */
 	background: #F2F2F2;
 	background-size: cover ;
 	margin: 10px 0px 10px 0px;
@@ -147,14 +162,16 @@ form i{																							/* Aspect et positionnement de l'icône du formula
 	border-radius: 12px 0px 0px 12px;
 }
 
-form input{																					/* Aspect et positionnement de l'input du formulaire */
+form input
+{																					/* Aspect et positionnement de l'input du formulaire */
 	border: 1px solid #F2F2F2 ;
 	color: black;
 	font-weight: bold;
 	padding: 12px 14px 12px 10px;
 }
 
-form button{																				/* Aspect et positionnement du bouton du formulaire */
+form button
+{																				/* Aspect et positionnement du bouton du formulaire */
 	color: white;
 	font-weight: bold;
 	text-align: center;
@@ -164,7 +181,8 @@ form button{																				/* Aspect et positionnement du bouton du formula
 	border-radius: 0px 12px 12px 0px;
 }
 
-form button:hover{																	/* Aspect au survol du bouton du formulaire */
+form button:hover
+{																	/* Aspect au survol du bouton du formulaire */
 	box-shadow: 2px 2px 5px grey;
 }
 
@@ -204,42 +222,49 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 
 /* Filtres */
 
-#filtres{																						/* Aspect et positionnement de la partie Filtres */
+#filtres
+{																						/* Aspect et positionnement de la partie Filtres */
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	margin-bottom: 10px;
 }
 
-#filtres_items{																			/* Positionnement des éléments de la partie Filtres */
+#filtres_items
+{																			/* Positionnement des éléments de la partie Filtres */
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
-#filtres p{																					/* Aspect et positionnement du texte de présentation de la partie Filtres */ 
+#filtres p
+{																					/* Aspect et positionnement du texte de présentation de la partie Filtres */ 
 	font-weight: bold;
 	margin-right: 40px;
 }
 
-.filtre_sélecteur{																	/* Aspect et positionnement des filtres de sélection */
+.filtre_sélecteur
+{																			/* Aspect et positionnement des filtres de sélection */
 	margin-right: 40px;
 	border: 2px solid #DEEBFF;
 	border-radius: 50px 50px 50px 50px;
 	font-weight: bold;
 	text-align: center;
 	flex-wrap: nowrap;
+	margin-bottom: 10px;
 }
 
-#filtres_items i{																		/* Icône des boutons de .filtre_sélecteur dans #filtres_items */
+#filtres_items i
+{																			/* Icône des boutons de .filtre_sélecteur dans #filtres_items */
 	background: #DEEBFF;
 	background-size: cover;
 	padding: 15px 15px 15px 15px;
 	border-radius: 50px 50px 50px 50px;
 }	
 
-.filtre_sélecteur button{														/* Boutons de .filtre_sélecteur */
+.filtre_sélecteur button
+{																			/* Boutons de .filtre_sélecteur */
 	font-weight: bold;
 	text-align: center;
 	background: white ;
@@ -248,19 +273,22 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 	border-radius: 0px 50px 50px 0px;
 }
 
-.filtre_sélecteur button:hover{											/* Effet au survol sur les boutons de .filtre_sélecteur */
+.filtre_sélecteur button:hover
+{																			/* Effet au survol sur les boutons de .filtre_sélecteur */
   background: #0065FC;
   border-radius: 0px 50px 50px 0px;
   padding: 16px 20px 14px 5px;
   box-shadow: 2px 2px 5px grey;
 }
 
-#disponibilité_sur_destination{											/* Texte sur la disponibilité dans filtres */
+#disponibilité_sur_destination
+{																			/* Texte sur la disponibilité dans filtres */
 	display: flex;
 	align-items: center;
 }
 
-#disponibilité_sur_destination i{										/* Icône du texte sur la disponibilité dans filtres */
+#disponibilité_sur_destination i
+{																			/* Icône du texte sur la disponibilité dans filtres */
 	border: 2px solid #F2F2F2;
 	font-size: 11px;
 	padding: 4px 8px 4px 8px;
@@ -287,6 +315,14 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 		margin-bottom: 10px;
 	}
 
+	.filtre_sélecteur button:hover
+	{																										/* Effet au survol sur les boutons de .filtre_sélecteur */
+  background: #0065FC;
+  border-radius: 0px 50px 50px 0px;
+  padding: 16px 20px 14px 5px;
+  box-shadow: 2px 2px 5px grey;
+	}
+
 	#disponibilité_sur_destination
 	{
 		align-items: center;
@@ -302,16 +338,25 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 
 /* Section choix* (Hébergements à Marseille + Les plus populaires */
 
-#choix{																							/* Disposition des blocs Hébergements à Marseille et Les plus populaires dans la section choix */
+#choix
+{																							/* Disposition des blocs Hébergements à Marseille et Les plus populaires dans la section choix */
 	display: flex;
 	justify-content: space-between;																					
 	margin-top: 20px;
 	flex-wrap: wrap-reverse;
 }
 
+#choix h3
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
 /* Hébergements à Marseille */
 
-#hébergements_marseille{														/* Fond et disposition dans Hébergements à Marseille */
+#hébergements_marseille
+{																						/* Fond et disposition dans Hébergements à Marseille */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -321,7 +366,8 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 	padding: 0px 20px 20px 20px;
 }
 
-#hébergements_dispo_ligne_1{												/* Disposition en deux lignes des articles de Hébergements à Marseille - Ligne 1 */
+#hébergements_dispo_ligne_1
+{																						/* Disposition en deux lignes des articles de Hébergements à Marseille - Ligne 1 */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -329,7 +375,8 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 	margin-bottom: 20px;
 }
 
-#hébergements_dispo_ligne_2{												/* Disposition en deux lignes des articles de Hébergements à Marseille - Ligne 2 */
+#hébergements_dispo_ligne_2
+{																						/* Disposition en deux lignes des articles de Hébergements à Marseille - Ligne 2 */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -337,7 +384,8 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 	margin-bottom: 20px;
 }
 
-#hébergements_marseille article {										/* Cartes d'hébergements pour Hébergements à Marseille */
+#hébergements_marseille article 
+{																						/* Cartes d'hébergements pour Hébergements à Marseille */
 	border: 1px solid #F2F2F2;
 	background: white;
 	border-radius: 20px 20px 20px 20px;
@@ -349,80 +397,98 @@ form button:hover{																	/* Aspect au survol du bouton du formulaire *
 	flex-direction: column;
 }
 
-#hébergements_marseille a:link { 										/* Aspect lien des cartes d'hébergements */ 
+#hébergements_marseille a:link 
+{ 																					/* Aspect lien des cartes d'hébergements */ 
  text-decoration:none;
 } 
 
-#hébergements_marseille a{													/* Couleur lien des cartes d'hébergements */
+#hébergements_marseille a
+{																						/* Couleur lien des cartes d'hébergements */
 color: black; 
 }
 
-#hébergements_marseille article img{								/* Images des cartes d'hébergements pour Hébergements à Marseille */
-	width: 96%;
+#hébergements_marseille article img
+{																						/* Images des cartes d'hébergements pour Hébergements à Marseille */
 	height: 55%;
 	border-radius: 20px 20px 0px 0px;
 	padding: 5px 5px 0px 5px;
 }
 
-#hébergements_marseille article .infos_hébergement{								/* Blocs infos des cartes d'hébergements pour Hébergements à Marseille */
+#hébergements_marseille article .infos_hébergement
+{																											/* Blocs infos des cartes d'hébergements pour Hébergements à Marseille */
 	width: 90%;
 	height: 30px;
-	padding: 0px 5px 5px 15px;
+	padding: 10px 5px 5px 15px;
 	display: flex;
 	flex-direction: column;
+	padding-left: 15px;
 	font-size: 80%;
 }
 
-#hébergements_marseille article note{								/* Notation dans les cartes d'hébergements */
+#hébergements_marseille article p
+{																						
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#hébergements_marseille article note
+{																						/* Notation dans les cartes d'hébergements */
 	display: flex;
 }
 
 
-@media (min-width: 370px) and (max-width: 780px)
-{
-	#hébergements_marseille{
-	width: 100%;
-	}
-
-	#hébergements_marseille article{
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-}
-
 
 @media (min-width: 370px) and (max-width: 780px)
 {
-	#hébergements_marseille{
+	#hébergements_marseille
+	{
 		width: 100%;
 		background: white;
 		margin-top: 20px;
 	}
 
-	#hébergements_marseille article {
+	#hébergements_marseille article img
+	{
+		padding: 5px;
+	}
+
+	#hébergements_marseille article 
+	{
 		width: 100%;
 		height: 230px;
-		font-size: 1.0em;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 1.2em;
 	}
 
-	#hébergements_dispo_ligne_1{	
-		flex-direction: column;
-	}
-
-	#hébergements_dispo_ligne_2{
-		flex-direction: column;
-	}
-
-	#hébergements_marseille article img{
-		max-width: 100%;
+	#hébergements_marseille article p
+	{
+		padding-bottom: 20px;
 	}	
+
+	#hébergements_dispo_ligne_1
+	{	
+		flex-direction: column;
+	}
+
+	#hébergements_dispo_ligne_2
+	{
+		flex-direction: column;
+	}
+
+	#hébergements_marseille p
+	{
+		margin-top: 0px;
+	}
+
 }
 
 
 
 /*Les plus populaires*/
 
-#choix_populaires{																	/* Fond pour Les plus populaires */
+#choix_populaires
+{																				/* Fond pour Les plus populaires */
 	background: #F2F2F2;
 	padding: 0px 20px 20px 20px;
 	border-radius: 20px 20px 20px 20px;
@@ -431,28 +497,34 @@ color: black;
 	flex-wrap: wrap;
 }
 
-#choix_populaires a:link { 													/* Aspect des liens des cartes d'hébergements pour Les plus populaires */ 
+#choix_populaires a:link 
+{							 													/* Aspect des liens des cartes d'hébergements pour Les plus populaires */ 
  text-decoration:none;
 } 
 
-#choix_populaires a{																/* Couleur des liens des cartes d'hébergements pour Les plus populaires */
+#choix_populaires a
+{																				/* Couleur des liens des cartes d'hébergements pour Les plus populaires */
 color: black; 
 }
 
-#les_plus_populaires {															/* Titre les_plus_populaires */
+#les_plus_populaires 
+{																				/* Titre les_plus_populaires */
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-#hébergements_populaires {													/* Disposition dans hébergements_populaires */
+#hébergements_populaires 
+{																				/* Disposition dans hébergements_populaires */
 	display: flex;
 	flex-direction: column;																					
 	justify-content: space-between;
 	height: 80%;
 }
 
-#hébergements_populaires article {									/* Cartes d'hébergements pour Les plus populaires */
+#hébergements_populaires article 
+{																				/* Cartes d'hébergements pour Les plus populaires */
 	border: 1px solid #F2F2F2;
 	background: white;
 	padding: 5px 0px 2px 5px;
@@ -464,96 +536,126 @@ color: black;
 	align-items: flex-start;
 }
 
-#hébergements_populaires article img{								/* Images des cartes d'hébergements pour Les plus populaires */
+#hébergements_populaires article img
+{																				/* Images des cartes d'hébergements pour Les plus populaires */
 	flex: 1 1 40%;
 	width: 32%;
 	height: 98%;
 	border-radius: 13px 0px 0px 13px;
 }
 
-#hébergements_populaires article .infos_hébergement{							/* Blocs infos des cartes d'hébergements pour Les plus populaires */
+#hébergements_populaires article .infos_hébergement
+{																													/* Blocs infos des cartes d'hébergements pour Les plus populaires */
 	flex: 1 1 60%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding-left: 15px;
+	padding-left: 10px;
+	padding-top: 5px;
 	font-size: 75%;
 }
 
-
-#hébergements_marseille article note{								/* Notation dans les cartes d'hébergements */
-	display: flex;
-}
 
 
 @media (min-width: 370px) and (max-width: 780px)
 {
 	
-	#choix_populaires{
+	#choix_populaires
+	{
 		width: 100%;
-		padding: 0px 20px 20px 20px;
-		border-radius: 0px;	
+		padding: 0px 20px 10px 20px;
+		border-radius: 0px;
+		height: 100%;
+		margin-top: 0px;
+		margin-bottom: 0px;	
 	}
 
-	#les_plus_populaires {
+	#les_plus_populaires 
+	{
 		width: 100%;
 		height: 50px;
 	}
+
+	#les_plus_populaires h2 
+	{
+		margin: Opx;
+	}
 		
-	#hébergements_populaires {
+	#hébergements_populaires 
+	{
 		width: 100%;
 		padding-right: 10px;
 	}
 
-	#hébergements_populaires article {
+	#hébergements_populaires article 
+	{
 		width: 100%;
+		height: 150px;
 		margin-bottom: 20px;
 		margin-top: 20px;
-		font-size: 1.15em;
-		height: 150px;
+		font-size: 100%;
 	}
+
+	#hébergements_populaires article .infos_hébergement
+	{
+		font-size: 100%;
+		height: 100%;
+		padding: 15px;
+	}
+
+	#hébergements_populaires article .infos_hébergement p
+	{
+		margin-top: 0px;
+		margin-bottom: 40px;
+	}
+
 }
-
-
 
 
 
 /* Activités */
 
-#activités{																					/* Disposition bloc activités */
+#activités
+{																							/* Disposition bloc activités */
 	margin-top: 40px;
 	margin-bottom: 20px;
 	height: 500px;
 	flex-wrap: wrap;
 }
 
-#blocs_activités {																	/* Disposition des éléments du bloc activités */
+#blocs_activités 
+{																							/* Disposition des éléments du bloc activités */
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-#activités a:link{														/* Aspect liens partie Activités */
+#activités a:link
+{																						/* Aspect liens partie Activités */
 	text-decoration:none;
 } 
 
-#activités a{																/* Couleur liens partie Activités */
+#activités a
+{																						/* Couleur liens partie Activités */
 	color: black; 
 }
 
-#blocs_activités div{																/* Disposition des éléments des blocs dans le bloc activités*/
+#blocs_activités div
+{																						/* Disposition des éléments des blocs dans le bloc activités*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-#blocs_activités h3{																/* Ajustement taille et position des titres des éléments du bloc activités */
+#blocs_activités h3
+{																						/* Ajustement taille et position des titres des éléments du bloc activités */
 	font-size: 80%;
 	margin-left: 10px;
 }
 
-.unique{																						/* Positionnement et aspect des colonnes à élément unique */
+.unique
+{																						/* Positionnement et aspect des colonnes à élément unique */
 	border: 1px solid #F2F2F2;
 	border-radius: 22px 22px 22px 22px;
 	box-shadow: 5px 5px 10px grey;
@@ -562,7 +664,8 @@ color: black;
 	flex-wrap: nowrap;
 }
 
-.unique img{																				/* Positionnement et aspect des photos dans les colonnes à élément unique */
+.unique img
+{																						/* Positionnement et aspect des photos dans les colonnes à élément unique */
 	width: 100%;
 	height: 90%;
 	border-radius: 20px 20px 0px 0px;
@@ -570,7 +673,8 @@ color: black;
 
 }
 
-.double{																						/* Positionnement et aspect des colonnes à 2 éléments */
+.double
+{																						/* Positionnement et aspect des colonnes à 2 éléments */
 	border: 1px solid #F2F2F2;
 	border-radius: 22px 22px 22px 22px;
 	box-shadow: 5px 5px 10px grey;
@@ -579,7 +683,8 @@ color: black;
 	flex-wrap: nowrap;
 }
 
-.double img{																				/* Positionnement et aspect des photos dans les colonnes à 2 éléments */
+.double img
+{																						/* Positionnement et aspect des photos dans les colonnes à 2 éléments */
 	width: 100%;
 	height: 80%;
 	border-radius: 20px 20px 0px 0px;
@@ -589,33 +694,29 @@ color: black;
 
 @media (min-width: 370px) and (max-width: 780px)
 {
-	#activités{	
+	#activités
+	{	
+		margin: 0px 20px 20px 20px;
 		width: 100%;
 		margin-top: 20px;
 	}
 
-	#activités h2
+	#blocs_activités
 	{
-		margin-left: 20px;
-	}
-
-	#blocs_activités{
-		width: 89%;
-		display: flex;
-		flex-direction: column;
-		margin: 0px 20px 0px 20px;
-	}
-
-	#activités h2{	
 		width: 100%;
-		height: 50px;
+		margin: 0px 20px 20px 20px
+		display: flex;
+		
 	}
 
-	#blocs_activités img{
-		height: 80%;
+	#blocs_activités img
+	{
+		width: 100%;
+		height: 75%;
 	}
 
-	#blocs_activités h3{
+	#blocs_activités h3
+	{
 		font-size: 1.0em;
 	}
 
@@ -626,7 +727,8 @@ color: black;
 		margin-bottom: 20px;
 	}
 
-	.double{
+	.double
+	{
 		width: 100%;
 		height: 200px;
 		flex-direction: column;
@@ -639,7 +741,8 @@ color: black;
 
 /* Footer */
 
-footer{																							/* Positionnement et comportement du footer */
+footer
+{																							/* Positionnement et comportement du footer */
 	width: 100%;
 	background: #F2F2F2;
 	background-size: cover ;
@@ -647,7 +750,8 @@ footer{																							/* Positionnement et comportement du footer */
 	flex-wrap: wrap;
 }
 
-footer div{																					/* Disposition des blocs d'éléments du footer */
+footer div
+{																							/* Disposition des blocs d'éléments du footer */
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -656,18 +760,21 @@ footer div{																					/* Disposition des blocs d'éléments du footer 
 	justify-content: flex-start;
 }
 
-footer h4{																					/* Aspect et positionnement des titres des blocs d'éléments du footer */
+footer h4
+{																							/* Aspect et positionnement des titres des blocs d'éléments du footer */
 	font-weight: bold;
 	margin: 20px 40px 0px 40px;
 }
 
-footer ul{																					/* Aspect des ul du footer */
+footer ul
+{																							/* Aspect des ul du footer */
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 }
 
-footer li{																					/* Comportement des li du footer */
+footer li
+{																							/* Comportement des li du footer */
 	list-style: none;
 	padding: 5px;
 } 
