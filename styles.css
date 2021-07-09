@@ -46,20 +46,46 @@ body
 /* Bandeau ou header */
 
 
-#bandeau 
+#header 
 {																				/* Aspect et positionnement de la partie bandeau */
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  color: #0065FC;
-  width: 1120px;
+  margin: 0;
+	padding: 0;
+	list-style-type: none;
+	justify-content: space-between;
+ }
+
+#header svg
+{																			/* Logo de l'entreprise */
+	padding-top: 10px;
+	margin: 0px;
+	padding-left: 20px;
 }
 
-#bandeau svg
-{																			/* Logo de l'entreprise */
-	max-width: 124px;
-	height: 50px;
-	justify-self: flex-start;
+
+nav-bar
+{
+	position: relative;
+	display: flex;
+}
+
+#menu_hébergement
+{
+	margin-right: 60px;
+	padding-top: 30px;
+}
+
+#menu_activité
+{
+	margin-right: 60px;
+	padding-top: 30px;
+}
+
+#inscription
+{
+	margin-right: 30px;
+	padding-top: 30px;
 }
 
 a:link 
@@ -67,77 +93,93 @@ a:link
  text-decoration:none; 
 } 
 
-nav a
+nav-bar #menu_hébergement a
 {																														
 	color: black;
-	padding: 38px 30px 0px 30px;
-}
-											
-nav a:hover
-{																			/* Aspect des liens Hébergements et Activités au survol */										
-	border-top: 2px solid #0065FC ;
-	color: #0065FC;
 }
 
-#bandeau div a
+nav-bar #menu_activité a
+{																														
+	color: black;
+}
+	
+nav-bar #inscription a
 {																		/* Aspect du liens S'inscrire */									
 	color: #0065FC;
 	font-weight: bold;
-	margin-left: 30px;
 }
+
+
+nav-bar #menu_hébergement a:hover
+{																										/* Aspect des liens Hébergements et Activités au survol */										
+	border-top: 2px solid #0065FC ;
+	padding-top: 40px;
+	color: #0065FC;
+}
+
+nav-bar #menu_activité a:hover
+{																										
+	border-top: 2px solid #0065FC ;
+	padding-top: 40px;
+	color: #0065FC;
+}
+
 
 
 
 @media all and (max-width: 780px)
 {
-	
-	#bandeau
+	header
 	{
-		width: 100%;
-		display: flex;
-		flex-wrap: nowrap;
-		align-items: center;
-		justify-content: space-between;
-		margin: 20px 20px 20px 20px
+		flex-direction: column;
 	}
-
+	
 	svg
 	{
-		width: 33%;
-		object-fit: contain;
+		position: absolute;
+		
+	}
+
+	nav-bar
+	{
+		justify-content: space-between;
+
+		flex-wrap: wrap-reverse;
 	}
 	
-	nav-bar 
+	#menu_hébergement
 	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		align-self: flex-end;
-		width: 100%;
-		margin-top: 40px;
+		width: 50%;
+		border-top: none;
+		text-align: center;
+		padding-bottom: 20px;
 	}
 
-	#bandeau div
+	#menu_activité
 	{
-		width: 33%;
-		justify-content: flex-start;
+		border-bottom: none;
 	}
 
-	nav a:hover
-	{																			/* Aspect des liens Hébergements et Activités au survol */										
+	#inscription
+	{
+		align-items: flex-start;
+		margin-left: 80%;
+	}
+
+	nav-bar #menu_hébergement a:hover
+	{																											/* Aspect des liens Hébergements et Activités au survol */										
 	border-bottom: 2px solid #0065FC ;
 	border-top: none;
 	color: #0065FC;
 	}
 
-}
-
-@media (min-width: 781px) and (max-width: 1200)
-{
-	#bandeau
-	{
-		width: 100%;
+	nav-bar #menu_activité a:hover
+	{																										
+	border-bottom: 2px solid #0065FC ;
+	border-top: none;
+	color: #0065FC;
 	}
+
 }
 
 
@@ -223,14 +265,14 @@ form button:hover
 
 	form i
 	{
-		font-size: 1.2em;
+		font-size: 1.0em;
 		padding: 14px;
 		border-radius: 18px 0px 0px 18px;
 	}
 
 	form input
 	{
-		font-size: 1.1em;
+		font-size: 1.0em;
 	}
 
 	form button
@@ -391,7 +433,7 @@ form button:hover
 	display: flex;
 	justify-content: space-between;																					
 	margin-top: 20px;
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 }
 
 #choix h3
@@ -451,8 +493,8 @@ form button:hover
 	background: white;
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: 5px 5px 5px grey;
-	width: 220px;
-	height: 170px;
+	width: 260px;
+	height: 180px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -470,7 +512,6 @@ color: black;
 
 #hébergements_marseille article img
 {																						/* Images des cartes d'hébergements pour Hébergements à Marseille */
-	width: 96%;
 	height: 55%;
 	border-radius: 20px 20px 0px 0px;
 	padding: 5px 5px 0px 5px;
@@ -485,13 +526,13 @@ color: black;
 	display: flex;
 	flex-direction: column;
 	padding-left: 15px;
-	font-size: 80%;
+	font-size: 75%;
 }
 
 #hébergements_marseille article p
 {																						
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 }
 
 #hébergements_marseille article note
@@ -510,11 +551,6 @@ color: black;
 		margin-top: 20px;
 	}
 
-	#hébergements_marseille article img
-	{
-		padding: 5px;
-	}
-
 	#hébergements_marseille article 
 	{
 		width: 100%;
@@ -522,6 +558,11 @@ color: black;
 		margin-top: 20px;
 		margin-bottom: 20px;
 		font-size: 1.2em;
+	}
+
+	#hébergements_marseille article img
+	{
+		padding: 5px;
 	}
 
 	#hébergements_marseille article p
@@ -603,7 +644,7 @@ color: black;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 5px 5px 5px grey;
 	width: 100%;
-	height: 100px;
+	height: 120px;
 	display: flex;
 	align-items: flex-start;
 }
@@ -625,7 +666,7 @@ color: black;
 	align-items: flex-start;
 	padding-left: 10px;
 	padding-top: 5px;
-	font-size: 75%;
+	font-size: 70%;
 }
 
 
@@ -679,7 +720,7 @@ color: black;
 	#hébergements_populaires article .infos_hébergement p
 	{
 		margin-top: 0px;
-		margin-bottom: 40px;
+		margin-bottom: 0px;
 	}
 
 }
@@ -778,16 +819,20 @@ color: black;
 {
 	#activités
 	{	
-		margin: 0px 20px 20px 20px;
+		display: flex;
+		margin: auto;
 		width: 100%;
-		margin-top: 20px;
-		margin-bottom: 20px;
 	}
+
+	#activités h2
+	{
+		margin-left: 20px;
+	}	
 
 	#blocs_activités
 	{
 		width: 100%;
-		margin: 0px 20px 20px 20px;
+		margin: auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -796,6 +841,7 @@ color: black;
 	#blocs_activités h3
 	{
 		margin-bottom: 10px;
+		font-size: 0.9em;
 	}	
 
 	#blocs_activités img
@@ -805,27 +851,29 @@ color: black;
 		object-fit: cover;
 	}
 
-	#blocs_activités h3
+	.unique
 	{
-		font-size: 0.9em;
-	}
-
-	.unique{
 		width: 100%;
-		height: 200px;
+		height: 250px;
 		flex-direction: column;
 		margin-bottom: 20px;
+		flex-wrap: wrap;
 	}
 
 	.double
 	{
 		width: 100%;
-		height: 200px;
+		height: 250px;
 		flex-direction: column;
 		margin-bottom: 20px;
+		flex-wrap: wrap;
 	}
 
 }
+
+
+
+
 
 
 @media (min-width: 781px) and (max-width: 1200)
