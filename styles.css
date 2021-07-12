@@ -8,7 +8,7 @@
 body
 {																							/* Définition police */
 	font-family: 'Raleway', sans-serif;
-	margin: 40px 40px 0px 40px;
+	margin: 0px;
 }
 
 
@@ -26,7 +26,7 @@ body
 	}
 }
 
-@media (min-width: 781px) and (max-width: 1200px)
+@media (min-width: 781px) and (max-width: 900px)
 {
 	* 
 	{
@@ -36,11 +36,24 @@ body
 	body
 	{
 		width: 100%;
-		margin: 10px;
+		margin: 0px;
 	}
 }
 
 
+main
+{
+	margin: 20px;
+}
+
+@media all and (max-width: 780px)
+{
+	main
+	{
+		width: 100%;
+		margin: 0px;
+	}
+}
 
 
 /* Bandeau ou header */
@@ -50,10 +63,10 @@ body
 {																				/* Aspect et positionnement de la partie bandeau */
   width: 100%;
   display: flex;
-  margin: 0;
-	padding: 0;
+  margin: 20px;
 	list-style-type: none;
 	justify-content: space-between;
+	align-items: flex-start;
  }
 
 #header svg
@@ -68,6 +81,7 @@ nav-bar
 {
 	position: relative;
 	display: flex;
+	flex-wrap: wrap-reverse;
 }
 
 #menu_hébergement
@@ -84,12 +98,12 @@ nav-bar
 
 #inscription
 {
-	margin-right: 30px;
 	padding-top: 30px;
+	margin-right: 30px;
 }
 
 a:link 
-{																					/* Aspect et positionnement des liens de la nav-bar (nav et div) */		 
+{																		/* Aspect et positionnement des liens de la nav-bar (nav et div) */		 
  text-decoration:none; 
 } 
 
@@ -109,23 +123,28 @@ nav-bar #inscription a
 	font-weight: bold;
 }
 
-
 nav-bar #menu_hébergement a:hover
 {																										/* Aspect des liens Hébergements et Activités au survol */										
 	border-top: 2px solid #0065FC ;
-	padding-top: 40px;
+	padding-top: 45px;
 	color: #0065FC;
 }
 
 nav-bar #menu_activité a:hover
 {																										
 	border-top: 2px solid #0065FC ;
-	padding-top: 40px;
+	padding-top: 45px;
 	color: #0065FC;
 }
 
 
-
+@media (min-width: 780px) and (max-width: 1200px)
+{
+	header
+	{
+		width: 100%;
+	}
+}
 
 @media all and (max-width: 780px)
 {
@@ -137,20 +156,17 @@ nav-bar #menu_activité a:hover
 	svg
 	{
 		position: absolute;
-		
 	}
 
 	nav-bar
 	{
-		justify-content: space-between;
-
-		flex-wrap: wrap-reverse;
+		justify-content: left;
+    flex-wrap: wrap-reverse;
 	}
 	
 	#menu_hébergement
 	{
 		width: 50%;
-		border-top: none;
 		text-align: center;
 		padding-bottom: 20px;
 	}
@@ -162,8 +178,8 @@ nav-bar #menu_activité a:hover
 
 	#inscription
 	{
-		align-items: flex-start;
 		margin-left: 80%;
+		justify-content: flex-start;
 	}
 
 	nav-bar #menu_hébergement a:hover
@@ -181,32 +197,6 @@ nav-bar #menu_activité a:hover
 	}
 
 }
-
-
-
-
-/* Choix de la ville d'hébergement */
-
-@media all and (max-width: 780px)
-{
-	
-	#titre_principal
-	{
-		margin: 0px 20px 0px 20px;
-	}
-
-	#saisie_destination
-	{
-		width: 100%;
-		margin: 0px 20px 0px 20px;
-	}
-
-	#disponibilité_sur_destination
-	{
-		margin: 0px 20px 0px 20px;
-	}
-
-}	
 
 
 
@@ -252,9 +242,7 @@ form .rechercher
 form .loupe
 {	
 	visibility: hidden;
-	background: #0065FC;
-	background-size: cover;
-	padding: 10px 10px 10px 10px;
+	padding: 10px;
 	border-radius: 0px 12px 12px 0px;
 }
 
@@ -266,7 +254,6 @@ form button:hover
 
 @media all and (max-width: 780px)
 {
-
 	form
 	{
 		width: 100%;
@@ -276,7 +263,7 @@ form button:hover
 	form i
 	{
 		font-size: 1.0em;
-		padding: 14px;
+		padding: 15px;
 		border-radius: 18px 0px 0px 18px;
 	}
 
@@ -294,25 +281,63 @@ form button:hover
 
 	form .rechercher
 	{
+		width: 0px;
 		visibility: hidden;
+		padding: 0px;
+		color: transparent;
+		border-radius: 0px;
 	}
 
 	form .loupe
 	{		
 		visibility: visible;
-		width: 0px;
-	}		
+		width: 60px;
+		padding: 2px;
+		background: #0065FC;
+		background-size: cover ;
+	}	
 
+	form .loupe i
+	{
+		padding: 0px;
+		border-radius: 0px;
+		background: #0065FC;
+		background-size: cover ;
+	}	
 }
 
 
-@media (min-width: 781px) and (max-width: 1200px)
+@media (min-width: 900px) and (max-width: 1200px)
 {
 	form
 	{
 		width: 100%;
 	}
 }
+
+
+/* Choix de la ville d'hébergement */
+
+@media all and (max-width: 780px)
+{
+	
+	#titre_principal
+	{
+		margin: 0px 20px 0px 20px;
+	}
+
+	#saisie_destination
+	{
+		width: 100%;
+		margin: 0px 20px 0px 20px;
+	}
+
+	#disponibilité_sur_destination
+	{
+		margin: 0px 20px 0px 20px;
+	}
+
+}	
 
 
 
@@ -464,18 +489,25 @@ form button:hover
 }
 
 
-@media (min-width: 781px) and (max-width: 1200px)
+@media (min-width: 781px) and (max-width: 900px)
 {
 	#choix
 	{
 		width: 100%;
 		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-direction: column-reverse;
 	}
 }
 
-
+@media all and (max-width: 780px)
+{
+	#choix
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
 
 /* Hébergements à Marseille */
 
@@ -553,7 +585,7 @@ color: black;
 #hébergements_marseille article p
 {																						
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 #hébergements_marseille article note
@@ -569,7 +601,13 @@ color: black;
 	{
 		width: 100%;
 		background: white;
-		margin-top: 20px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+
+	#hébergements_marseille h2
+	{
+		margin-bottom: 0px;
 	}
 
 	#hébergements_marseille article 
@@ -584,6 +622,9 @@ color: black;
 	#hébergements_marseille article img
 	{
 		padding: 5px;
+		height: 55%;
+		border-radius: 20px 20px 0px 0px;
+		object-fit: cover;
 	}
 
 	#hébergements_marseille article p
@@ -609,11 +650,88 @@ color: black;
 }
 
 
-@media (min-width: 781px) and (max-width: 1200px)
+@media (min-width: 781px) and (max-width: 900px)
 {
 	#hébergements_marseille
 	{
-		width: 65%;
+		width: 100%;
+		border-radius: 0px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#hébergements_dispo_ligne_1
+	{	
+		width: 100%;
+		flex-direction: row;
+	}
+
+	#hébergements_dispo_ligne_2
+	{
+		width: 100%;
+		flex-direction: row;
+	}
+	
+	#hébergements_marseille article 
+	{
+		width: 230px;
+	}
+
+	#hébergements_marseille article img
+	{
+		padding: 5px;
+		height: 55%;
+		border-radius: 20px 20px 0px 0px;
+		object-fit: cover;
+	}
+
+}
+
+@media (min-width: 900px) and (max-width: 1200px)
+{
+	#hébergements_marseille
+	{
+		width: 75%;
+		border-radius: 20px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#hébergements_marseille h2
+	{
+		font-size: 1.1em;
+	}
+
+	#hébergements_dispo_ligne_1
+	{	
+		width: 100%;
+		flex-direction: row;
+	}
+
+	#hébergements_dispo_ligne_2
+	{
+		width: 100%;
+		flex-direction: row;
+	}
+
+	#hébergements_marseille article 
+	{
+		width: 200px;
+	}
+
+	#hébergements_marseille article img
+	{
+		padding: 5px;
+		height: 55%;
+		border-radius: 20px 20px 0px 0px;
+		object-fit: cover;
+	}
+
+	#hébergements_marseille p
+	{
+		margin-top: 20px;
 	}
 }
 
@@ -649,6 +767,12 @@ color: black;
 	justify-content: space-between;
 }
 
+#les_plus_populaires h2
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}	
+
 #hébergements_populaires 
 {																				/* Disposition dans hébergements_populaires */
 	display: flex;
@@ -656,6 +780,7 @@ color: black;
 	justify-content: space-between;
 	height: 80%;
 }
+
 
 #hébergements_populaires article 
 {																				/* Cartes d'hébergements pour Les plus populaires */
@@ -733,27 +858,117 @@ color: black;
 
 	#hébergements_populaires article .infos_hébergement
 	{
-		font-size: 100%;
+		font-size: 90%;
 		height: 100%;
 		padding: 15px;
+		padding-top: 5px;
+	}
+
+	#hébergements_populaires article .infos_hébergement p
+	{
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+
+}
+
+
+@media (min-width: 781px) and (max-width: 900px)
+{
+	#choix_populaires
+	{
+		width: 100%;
+		border-radius: 0px;
+		margin-bottom: 20px;
+	}
+
+	#hébergements_populaires 
+	{
+		width: 100%;
+		flex-direction: row;
+	}
+
+	#hébergements_populaires article 
+	{
+		width: 230px;
+		height: 180px;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#hébergements_populaires article img
+	{																				
+		width: 100%;
+		height: 100px;
+		border-radius: 13px 13px 0px 0px;
+		object-fit: cover;
+		padding-right: 5px;
+	}
+
+	#hébergements_populaires article .infos_hébergement
+	{																													
+		display: flex;
+		height: 20%;
+		font-size: 68%;
+		padding-top: 5px;
 	}
 
 	#hébergements_populaires article .infos_hébergement p
 	{
 		margin-top: 0px;
-		margin-bottom: 0px;
+		margin-bottom: 10px;
 	}
 
 }
 
-
-@media (min-width: 781px) and (max-width: 1200px)
+@media (min-width: 900px) and (max-width: 1200px)
 {
 	#choix_populaires
 	{
-		width: 25%;
+		width: 24%;
 	}
+
+	#choix_populaires h2
+	{
+		font-size: 1.1em;
+		margin-bottom: 5px;
+	}
+
+	#hébergements_populaires article 
+	{
+		width: 100%;
+		height: 130px;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#hébergements_populaires article img
+	{
+		width: 100%;
+		height: 55%;
+		padding: 0px 5px 0px 0px;
+		border-radius: 13px 13px 0px 0px;
+		object-fit: cover;
+	}
+
+	#hébergements_populaires article .infos_hébergement
+	{																													
+		display: flex;
+		height: 25%;
+		font-size: 0.6em;
+		padding-top: 2px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	#hébergements_populaires article .infos_hébergement p
+	{
+		margin-top: 0px;
+		margin-bottom: 4px;
+	}
+
 }
+
 
 
 
@@ -761,7 +976,7 @@ color: black;
 
 #activités
 {																							/* Disposition bloc activités */
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	flex-wrap: wrap;
 }
@@ -836,39 +1051,40 @@ color: black;
 }
 
 
-@media all and (max-width: 780px)
+@media all and (max-width: 900px)
 {
 	#activités
 	{	
 		display: flex;
-		margin: auto;
+		flex-direction: row;
 		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 10px;
 	}
 
 	#activités h2
 	{
 		margin-left: 20px;
+		margin-bottom: 10px;
 	}	
 
 	#blocs_activités
 	{
 		width: 100%;
-		margin: auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		margin: 40px;
+		flex-direction: column;
 	}
 
 	#blocs_activités h3
 	{
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 		font-size: 0.9em;
 	}	
 
 	#blocs_activités img
 	{
 		width: 100%;
-		height: 75%;
+		height: 80%;
 		object-fit: cover;
 	}
 
@@ -877,7 +1093,7 @@ color: black;
 		width: 100%;
 		height: 250px;
 		flex-direction: column;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		flex-wrap: wrap;
 	}
 
@@ -886,25 +1102,31 @@ color: black;
 		width: 100%;
 		height: 250px;
 		flex-direction: column;
-		margin-bottom: 20px;
-		flex-wrap: wrap;
+		margin-bottom: 40px;
+		flex-wrap: nowrap;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1200px)
+{
+	#blocs_activités 
+	{																							
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+
+	.unique
+	{
+		width: 200px;
+	}
+
+	.double
+	{
+		width: 220px;
 	}
 
 }
-
-
-
-
-
-
-@media (min-width: 781px) and (max-width: 1200px)
-{
-	#activités
-	{
-		width: 100%;
-	}	
-}
-
 
 
 /* Footer */
@@ -975,3 +1197,4 @@ footer li
 		display: flex;
 	}	
 }
+
