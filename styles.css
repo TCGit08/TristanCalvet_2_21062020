@@ -56,8 +56,8 @@ main
   list-style-type: none;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-top: 20px;
-  padding-left: 40px;
+	margin-top: 0px;
+  padding-left: 0px;
  }
 
 #header svg
@@ -122,14 +122,14 @@ nav-bar #inscription a
 nav-bar #menu_hébergement:hover
 {																										/* Aspect des liens Hébergements et Activités au survol */										
 	border-top: 2px solid #0065FC ;
-	padding-top: 30px;
+	padding-top: 28px;
 	color: #0065FC;
 }
 
 nav-bar #menu_activité:hover
 {																										
 	border-top: 2px solid #0065FC ;
-	padding-top: 30px;
+	padding-top: 28px;
 	color: #0065FC;
 }
 
@@ -139,6 +139,7 @@ nav-bar #menu_activité:hover
 	header
 	{
 		width: 100%;
+		padding-left: 0px;
 	}
 }
 
@@ -148,6 +149,7 @@ nav-bar #menu_activité:hover
 	{
 		width: 100%;
 		flex-direction: column;
+		padding-left: 0px;
 	}
 	
 	svg
@@ -615,12 +617,23 @@ color: black;
 
 	#hébergements_marseille h2
 	{
-		margin-bottom: 0px;
+		margin-bottom: 20px;
+	}
+
+	#hébergements_dispo_ligne_1
+	{
+		align-items: center;
+	}
+
+	#hébergements_dispo_ligne_2
+	{
+		align-items: center;
 	}
 
 	#hébergements_marseille a
 	{
 		margin-bottom: 20px;
+		width: 300px;
 	}
 
 	#hébergements_marseille article 
@@ -1104,10 +1117,34 @@ color: black;
 		margin-bottom: 20px;
 	}
 
+	#blocs_activités h3
+	{
+		margin-top: 5px;
+	}
+
 	.blocs_activités_unique 
 	{
 		width: 100%;
+		height: 250px;
 		align-items: center;
+
+	}
+
+	.blocs_activités_unique a
+	{
+		width: 300px;
+		height: 100%;
+	}
+
+	.blocs_activités_unique img
+	{
+		height: 85%;
+	}
+
+	.unique
+	{
+		width: 100%;
+		height: 100%;
 	}
 
 	.bloc_activités_double
@@ -1119,11 +1156,13 @@ color: black;
 
 .bloc_activités_double a
 	{
+		width: 300px;
 		margin-bottom: 20px;
 	}
 
 .double
 	{
+		width: 100%;
 		flex-wrap: wrap;
 	}
 }
