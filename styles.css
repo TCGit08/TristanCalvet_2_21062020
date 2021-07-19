@@ -99,7 +99,7 @@ nav-bar
 }
 
 a:link 
-{																		/* Aspect et positionnement des liens de la nav-bar (nav et div) */		 
+{																							/* Aspect et positionnement des liens de la nav-bar (nav et div) */		 
  text-decoration:none; 
 } 
 
@@ -114,13 +114,13 @@ nav-bar #menu_activité a
 }
 	
 nav-bar #inscription a
-{																		/* Aspect du liens S'inscrire */									
+{																							/* Aspect du liens S'inscrire */									
 	color: #0065FC;
 	font-weight: bold;
 }
 
 nav-bar #menu_hébergement:hover
-{																										/* Aspect des liens Hébergements et Activités au survol */										
+{																							/* Aspect des liens Hébergements et Activités au survol */										
 	border-top: 2px solid #0065FC ;
 	padding-top: 28px;
 	color: #0065FC;
@@ -155,6 +155,8 @@ nav-bar #menu_activité:hover
 	svg
 	{
 		position: absolute;
+		padding-bottom: 15px;
+		padding-top: 30px;
 	}
 
 	nav-bar
@@ -162,15 +164,15 @@ nav-bar #menu_activité:hover
 		width: 100%;
 		justify-content: left;
     flex-wrap: wrap-reverse;
-    border-bottom: 2px solid #F2F2F2;
-	}
+  }
 	
 	#menu_hébergement
 	{
 		width: 50%;
 		text-align: center;
-		padding-bottom: 24px;
+		padding-bottom: 18px;
 		margin-right: 0px;
+		border-bottom: 3px solid #F2F2F2;
 	}
 
 	#menu_activité
@@ -178,7 +180,8 @@ nav-bar #menu_activité:hover
 		width: 50%;
 		margin-right: 0px;
 		text-align: center;
-		padding-bottom: 24px;
+		padding-bottom: 18px;
+		border-bottom: 3px solid #F2F2F2;
 	}
 
 	#inscription
@@ -190,19 +193,27 @@ nav-bar #menu_activité:hover
 
 	nav-bar #menu_hébergement:hover
 	{																											/* Aspect des liens Hébergements et Activités au survol */										
-	border-bottom: 4px solid #0065FC ;
-	padding-bottom: 20px;
-	border-top: none;
-	color: #0065FC;
+		border-bottom: 3px solid #0065FC ;
+		padding-bottom: 20px;
+		border-top: none;
 	}
+
+	nav-bar #menu_hébergement a:hover
+	{
+		color: #0065FC;
+	}																										
 
 	nav-bar #menu_activité:hover
 	{																										
-	border-bottom: 4px solid #0065FC ;
-	padding-bottom: 20px;
-	border-top: none;
-	color: #0065FC;
+		border-bottom: 3px solid #0065FC ;
+		padding-bottom: 20px;
+		border-top: none;
 	}
+
+	nav-bar #menu_activité a:hover
+	{
+		color: #0065FC;
+	}	
 
 }
 
@@ -271,20 +282,21 @@ form button:hover
 	form i
 	{
 		font-size: 1.0em;
-		padding: 15px;
+		padding: 15px 15px 15px 18px;
 		border-radius: 18px 0px 0px 18px;
 	}
 
 	form input
 	{
 		font-size: 1.0em;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		padding-right: 0px;
 	}
 
 	form button
 	{
 		font-size: 1.0em;
-		border-radius: 0px 18px 18px 0px;
-		
 	}
 
 	form .rechercher
@@ -294,15 +306,19 @@ form button:hover
 		padding: 0px;
 		color: transparent;
 		border-radius: 0px;
+		border: none;
+
 	}
 
 	form .loupe
 	{		
 		visibility: visible;
-		width: 60px;
-		padding: 2px;
+		width: 50px;
+		border-radius: 18px 18px 18px 18px;
+		padding: 6px 0px 6px 0px;
 		background: #0065FC;
 		background-size: cover ;
+		border: none;
 	}	
 
 	form .loupe i
@@ -454,7 +470,7 @@ form button:hover
 	{																										
   background: #0065FC;
   border-radius: 0px 50px 50px 0px;
-  padding: 12px 20px 13px 5px;
+  padding: 13px 20px 13px 5px;
   box-shadow: 2px 2px 5px grey;
 	}
 
@@ -517,6 +533,8 @@ form button:hover
 	}
 }
 
+
+
 /* Hébergements à Marseille */
 
 #hébergements_marseille
@@ -554,7 +572,7 @@ form button:hover
 	border: 1px solid #F2F2F2;
 	background: white;
 	border-radius: 20px 20px 20px 20px;
-	box-shadow: 5px 5px 5px grey;
+	box-shadow: 3px 3px 3px #F2F2F2;
 	width: 260px;
 	height: 180px;
 	display: flex;
@@ -603,6 +621,12 @@ color: black;
 	display: flex;
 }
 
+#hébergements_marseille p
+{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
 
 
 @media all and (max-width: 780px)
@@ -613,34 +637,39 @@ color: black;
 		background: white;
 		margin-top: 10px;
 		margin-bottom: 0px;
+		padding-bottom: 10px;
 	}
 
 	#hébergements_marseille h2
 	{
-		margin-bottom: 20px;
+		margin-top: 10px;
+		margin-bottom: 15px;
 	}
 
 	#hébergements_dispo_ligne_1
 	{
 		align-items: center;
+		width: 100%;
+		margin-bottom: 0px;
 	}
 
 	#hébergements_dispo_ligne_2
 	{
 		align-items: center;
+		width: 100%;
 	}
 
 	#hébergements_marseille a
 	{
-		margin-bottom: 20px;
-		width: 300px;
+		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	#hébergements_marseille article 
 	{
 		width: 100%;
-		height: 230px;
-		font-size: 1.2em;
+		height: 200px;
+		font-size: 1.1em;
 	}
 
 	#hébergements_marseille article img
@@ -689,7 +718,7 @@ color: black;
 	#hébergements_marseille
 	{
 		width: 100%;
-		border-radius: 0px;
+		border-radius: 20px 20px 20px 20px;
 		margin-bottom: 20px;
 		display: flex;
 		flex-direction: column;
@@ -822,7 +851,7 @@ color: black;
 	background: white;
 	padding: 5px 0px 2px 5px;
 	border-radius: 15px 15px 15px 15px;
-	box-shadow: 5px 5px 5px grey;
+	box-shadow: 3px 3px 3px #F2F2F2;
 	width: 100%;
 	height: 120px;
 	display: flex;
@@ -867,23 +896,26 @@ color: black;
 	#les_plus_populaires 
 	{
 		width: 100%;
-		height: 50px;
+		height: 80px;
 	}
 
 	#les_plus_populaires h2 
 	{
 		margin: 0px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 		
 	#hébergements_populaires 
 	{
 		width: 100%;
-		padding-right: 10px;
+		padding-right: 0px;
 	}
 
 	#hébergements_populaires a
 	{
 		margin-bottom: 20px;
+		width: 100%;
 	}
 
 	#hébergements_populaires article 
@@ -915,7 +947,7 @@ color: black;
 	#choix_populaires
 	{
 		width: 100%;
-		border-radius: 0px;
+		border-radius: 20px 20px 20px 20px;
 		margin-bottom: 20px;
 	}
 
@@ -1058,7 +1090,7 @@ color: black;
 {																						/* Positionnement et aspect des colonnes à élément unique */
 	border: 1px solid #F2F2F2;
 	border-radius: 22px 22px 22px 22px;
-	box-shadow: 5px 5px 10px grey;
+	box-shadow: 3px 3px 3px #F2F2F2;
 	width: 250px;
 	height: 450px;
 	flex-wrap: nowrap;
@@ -1077,7 +1109,7 @@ color: black;
 {																						/* Positionnement et aspect des colonnes à 2 éléments */
 	border: 1px solid #F2F2F2;
 	border-radius: 22px 22px 22px 22px;
-	box-shadow: 5px 5px 10px grey;
+	box-shadow: 3px 3px 3px #F2F2F2;
 	width: 250px;
 	height: 200px;
 	flex-wrap: nowrap;
@@ -1106,6 +1138,7 @@ color: black;
 	#activités h2
 	{
 		margin-left: 20px;
+		margin-bottom: 25px
 	}
 
 	#blocs_activités
@@ -1119,15 +1152,16 @@ color: black;
 
 	#blocs_activités h3
 	{
-		margin-top: 5px;
+		margin-top: 15px;
+		font-size: 1.0em;
+		padding-left: 5px;
 	}
 
 	.blocs_activités_unique 
 	{
 		width: 100%;
-		height: 250px;
+		height: 200px;
 		align-items: center;
-
 	}
 
 	.blocs_activités_unique a
@@ -1138,7 +1172,7 @@ color: black;
 
 	.blocs_activités_unique img
 	{
-		height: 85%;
+		height: 70%;
 	}
 
 	.unique
@@ -1165,6 +1199,12 @@ color: black;
 		width: 100%;
 		flex-wrap: wrap;
 	}
+
+.double img
+	{
+		height: 70%;
+	}
+
 }
 
 
@@ -1193,8 +1233,8 @@ color: black;
 
 	#blocs_activités h3
 	{
-		padding-bottom: 10px;
-		font-size: 0.8em;
+		
+		font-size: 0.9em;
 	}	
 
 	.blocs_activités_unique 
@@ -1221,13 +1261,14 @@ color: black;
 	.unique img
 	{
 		width: 100%;
-		height: 90%;
+		height: 87%;
 		object-fit: cover;
 	}
 
 	.double img
 	{
 		width: 100%;
+		height: 75%;
 	}
 
 	.unique
