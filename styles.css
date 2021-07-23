@@ -9,13 +9,12 @@ body
 {																							/* Définition police */
 	font-family: 'Raleway', sans-serif;
 	margin: 0px;
+	width: 100%;
 }
 
 
 @media all and (max-width: 780px)
 {
-	
-
 	body
 	{
 		width: 100%;
@@ -71,7 +70,7 @@ main
 }
 
 
-nav-bar
+nav
 {
 	position: relative;
 	display: flex;
@@ -103,30 +102,30 @@ a:link
  text-decoration:none; 
 } 
 
-nav-bar #menu_hébergement a
+nav #menu_hébergement a
 {																														
 	color: black;
 }
 
-nav-bar #menu_activité a
+nav #menu_activité a
 {																														
 	color: black;
 }
 	
-nav-bar #inscription a
+nav #inscription a
 {																							/* Aspect du liens S'inscrire */									
 	color: #0065FC;
 	font-weight: bold;
 }
 
-nav-bar #menu_hébergement:hover
+nav #menu_hébergement:hover
 {																							/* Aspect des liens Hébergements et Activités au survol */										
 	border-top: 2px solid #0065FC ;
 	padding-top: 28px;
 	color: #0065FC;
 }
 
-nav-bar #menu_activité:hover
+nav #menu_activité:hover
 {																										
 	border-top: 2px solid #0065FC ;
 	padding-top: 28px;
@@ -159,7 +158,7 @@ nav-bar #menu_activité:hover
 		padding-top: 30px;
 	}
 
-	nav-bar
+	nav
 	{
 		width: 100%;
 		justify-content: left;
@@ -191,26 +190,26 @@ nav-bar #menu_activité:hover
 		justify-content: flex-start;
 	}
 
-	nav-bar #menu_hébergement:hover
+	nav #menu_hébergement:hover
 	{																											/* Aspect des liens Hébergements et Activités au survol */										
 		border-bottom: 3px solid #0065FC ;
 		padding-bottom: 20px;
 		border-top: none;
 	}
 
-	nav-bar #menu_hébergement a:hover
+	nav #menu_hébergement a:hover
 	{
 		color: #0065FC;
 	}																										
 
-	nav-bar #menu_activité:hover
+	nav #menu_activité:hover
 	{																										
 		border-bottom: 3px solid #0065FC ;
 		padding-bottom: 20px;
 		border-top: none;
 	}
 
-	nav-bar #menu_activité a:hover
+	nav #menu_activité a:hover
 	{
 		color: #0065FC;
 	}	
@@ -230,8 +229,8 @@ form
 }
 
 form i
-{																							/* Aspect et positionnement de l'icône du formulaire */
-	background: #F2F2F2;
+{																
+	background: #F2F2F2; 												/* Aspect et positionnement de l'icône du formulaire */
 	background-size: cover ;
 	margin: 10px 0px 10px 0px;
 	padding: 13px 12px 13px 13px;
@@ -261,6 +260,7 @@ form .rechercher
 form .loupe
 {	
 	visibility: hidden;
+	color: white;
 	padding: 10px;
 	border-radius: 0px 12px 12px 0px;
 }
@@ -353,12 +353,12 @@ form button:hover
 	#saisie_destination
 	{
 		width: 100%;
-		margin: 0px 20px 0px 20px;
+		padding: 0px 0px 0px 20px;
 	}
 
 	#disponibilité_sur_destination
 	{
-		margin: 0px 20px 0px 20px;
+		padding: 0px 20px 0px 20px;
 	}
 
 }	
@@ -406,6 +406,7 @@ form button:hover
 	background-size: cover;
 	padding: 15px 15px 15px 15px;
 	border-radius: 50px 50px 50px 50px;
+	color:#0065FC
 }	
 
 .filtre_sélecteur button
@@ -434,6 +435,7 @@ form button:hover
 
 #disponibilité_sur_destination i
 {																			/* Icône du texte sur la disponibilité dans filtres */
+	color:#0065FC;
 	border: 2px solid #F2F2F2;
 	font-size: 11px;
 	padding: 4px 8px 4px 8px;
@@ -447,7 +449,8 @@ form button:hover
 	
 	#filtres
 	{
-		margin: 0px 20px 0px 20px;
+		width: 100%;
+		padding-left: 20px;
 	}
 
 	#filtres_items
@@ -620,6 +623,12 @@ color: black;
 {																						/* Notation dans les cartes d'hébergements */
 	display: flex;
 }
+
+#hébergements_marseille i
+{
+	color:#0065FC;
+}
+
 
 #hébergements_marseille p
 {
@@ -878,6 +887,11 @@ color: black;
 	font-size: 70%;
 }
 
+#hébergements_populaires article i
+{
+	color:#0065FC;
+}
+
 
 
 @media all and (max-width: 780px)
@@ -1082,8 +1096,9 @@ color: black;
 
 #blocs_activités h3
 {																						/* Ajustement taille et position des titres des éléments du bloc activités */
-	font-size: 80%;
+	font-size: 90%;
 	margin-left: 10px;
+
 }
 
 .unique
@@ -1092,14 +1107,14 @@ color: black;
 	border-radius: 22px 22px 22px 22px;
 	box-shadow: 3px 3px 3px #F2F2F2;
 	width: 250px;
-	height: 450px;
+	height: 350px;
 	flex-wrap: nowrap;
 }
 
 .unique img
 {																						/* Positionnement et aspect des photos dans les colonnes à élément unique */
 	width: 100%;
-	height: 90%;
+	height: 86%;
 	border-radius: 20px 20px 0px 0px;
 	flex-wrap: wrap;
 	object-fit: cover;
@@ -1111,14 +1126,14 @@ color: black;
 	border-radius: 22px 22px 22px 22px;
 	box-shadow: 3px 3px 3px #F2F2F2;
 	width: 250px;
-	height: 200px;
+	height: 160px;
 	flex-wrap: nowrap;
 }
 
 .double img
 {																						/* Positionnement et aspect des photos dans les colonnes à 2 éléments */
 	width: 100%;
-	height: 80%;
+	height: 69%;
 	border-radius: 20px 20px 0px 0px;
 	flex-wrap: nowrap;
 	object-fit: cover;
@@ -1300,6 +1315,11 @@ color: black;
 		padding-bottom: 20px;
 	}
 
+	#blocs_activités h3
+	{
+		font-size: 80%;
+	}
+
 	.unique
 	{
 		width: 200px;
@@ -1361,6 +1381,7 @@ footer li
 
 	footer
 	{
+		width: 100%;
 		flex-direction: column;
 	}
 
@@ -1368,6 +1389,7 @@ footer li
 	footer div
 	{
 		width: 100%;
+		margin-right: 0px;
 	}
 
 }
