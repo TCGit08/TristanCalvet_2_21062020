@@ -10,6 +10,9 @@ body
 	font-family: 'Raleway', sans-serif;
 	margin: 0px;
 	width: 100%;
+	overflow: -moz-scrollbars-vertical;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 
