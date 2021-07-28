@@ -128,12 +128,22 @@ nav #menu_hébergement:hover
 	color: #0065FC;
 }
 
+nav #menu_hébergement a:hover
+	{
+		color: #0065FC;
+	}	
+
 nav #menu_activité:hover
 {																										
 	border-top: 2px solid #0065FC ;
 	padding-top: 28px;
 	color: #0065FC;
 }
+
+nav #menu_activité a:hover
+{
+	color: #0065FC;
+}	
 
 
 @media (min-width: 780px) and (max-width: 1500px)
@@ -1379,11 +1389,58 @@ color: black;
 		width: 220px;
 	}
 
+	.unique img
+	{
+		height: 90%;
+	}
+
+	.unique h3
+	{
+		margin-top: 5px;
+	}
+
 	.double
 	{
 		width: 220px;
 	}
 
+	.double img
+	{
+		height: 79%;
+	}
+
+	.double h3
+	{
+		margin-top: 5px;
+	}
+
+	.asym_1
+	{
+		width: 220px;
+		height: 184px;
+		
+	}
+
+	.asym_1 img
+	{
+		height: 80%;
+	}
+
+	.asym_2
+	{
+		width: 220px;
+		height: 106px;
+	}
+
+	.asym_2 img
+	{
+		height: 70%;
+	}
+
+	.asym_2 h3
+	{
+		margin-top: 5px;
+	}
 
 }
 
